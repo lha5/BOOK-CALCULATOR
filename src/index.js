@@ -1,9 +1,14 @@
+import React from 'react';
 import ReactDOM from 'react-dom/client';
-import { BrowserRouter } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 
 import 'styles/index.css';
 
 import App from 'views/App';
+import NotFound from 'views/NotFound';
+import Home from 'views/home';
+import Spine from 'views/spine';
+import Estimate from 'views/estimate';
 
 // import { initializeApp } from 'firebase/app';
 // import { getAnalytics } from 'firebase/analytics';
@@ -20,9 +25,22 @@ import App from 'views/App';
 // const app = initializeApp(firebaseConfig);
 // const analytics = getAnalytics(app);
 
+const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <App />,
+    errorElement: <NotFound />,
+    children: [
+      { index: true, path: '/', element: <Home /> },
+      { path: '/spine', element: <Spine /> },
+      { path: '/estimate', element: <Estimate /> },
+    ],
+  },
+]);
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
+  <React.StrictMode>
+    <RouterProvider router={router} />
+  </React.StrictMode>
 );

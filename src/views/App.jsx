@@ -1,16 +1,17 @@
-import { Routes, Route } from 'react-router-dom';
+import { Outlet } from 'react-router-dom';
 
-import Home from './home';
-import Spine from './spine';
-import Estimate from './estimate';
+import Navbar from 'components/layout/Navbar';
+import Footer from 'components/layout/Footer';
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/spine" element={<Spine />} />
-      <Route path="/estimate" element={<Estimate />} />
-    </Routes>
+    <div className="container border border-red-300 mx-auto">
+      <Navbar />
+      <main>
+        <Outlet />
+      </main>
+      <Footer />
+    </div>
   );
 }
 
