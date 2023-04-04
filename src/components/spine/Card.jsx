@@ -1,6 +1,6 @@
 function Card({ weight = 100, result = 1.0 }) {
   return (
-    <div className="flex border border-slate-300 rounded-lg w-96 h-52">
+    <div className="flex border border-slate-300 rounded-lg w-full md:w-96 h-52">
       <div className="flex items-center nanumsr w-44 relative justify-center text-3xl font-black bg-slate-500 text-white rounded-l-lg">
         {weight}g
       </div>

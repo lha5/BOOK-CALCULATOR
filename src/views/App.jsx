@@ -7,10 +7,10 @@ function App() {
   return (
     <>
       <Navbar />
-      <div className="container mx-auto px-4 md:px-0">
+      <div className="container mx-auto px-4 md:px-0 pb-14">
         <Outlet />
-        <Footer />
       </div>
+      <Footer />
     </>
   );
 }
