@@ -1,6 +1,6 @@
 function index() {
   return (
-    <main className="absolute top-20 bottom-20 left-0 right-0 flex items-center justify-center">
+    <main className="absolute top-0 bottom-0 left-0 right-0 flex items-center justify-center">
       <p className="text-center">
         풍요로운 책세상에서 제공하는 각종 계산기를
         <br />

@@ -1,12 +1,12 @@
 function Footer() {
   return (
-    <footer className="absolute bottom-0 left-0 right-0 text-center py-4">
+    <footer className="absolute bottom-0 left-0 right-0 text-center py-4 text-sm md:text-base bg-transparent">
       ©{' '}
       <a
         href="https://cafe.naver.com/bookcns"
         target="_blank"
         rel="noreferrer"
-        className="font-medium"
+        className="font-semibold"
       >
         풍요로운 책세상
       </a>
