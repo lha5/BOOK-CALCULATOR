@@ -5,13 +5,13 @@ import Footer from 'components/layout/Footer';
 
 function App() {
   return (
-    <div className="container border border-red-300 mx-auto">
+    <>
       <Navbar />
-      <main>
+      <div className="container mx-auto">
         <Outlet />
-      </main>
-      <Footer />
-    </div>
+        <Footer />
+      </div>
+    </>
   );
 }
 
