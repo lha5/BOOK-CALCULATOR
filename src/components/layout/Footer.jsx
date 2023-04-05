@@ -8,9 +8,9 @@ function Footer() {
         rel="noreferrer"
         className="font-semibold mr-1"
       >
-        풍요로운 책세상
+        풍요로운 책세상.
       </a>
-      . All Rights Reserved. &{' '}
+      All Rights Reserved. &{' '}
       <a
         href="https://github.com/lha5/BOOK-CALCULATOR"
         target="_blank"

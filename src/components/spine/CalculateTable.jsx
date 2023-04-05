@@ -19,7 +19,7 @@ function CalculateTable() {
             <input
               type="text"
               defaultValue={100}
-              className="text-slate-500 focus:text-emerald-500 text-center w-14 p-2"
+              className="text-slate-500 border-0 border-b border-b-slate-500 focus:text-emerald-500 text-center w-14 p-2"
               autoFocus
             />{' '}
             페이지
@@ -36,7 +36,7 @@ function CalculateTable() {
             <input
               type="text"
               defaultValue={100}
-              className="text-slate-500 focus:text-emerald-500 text-center w-14 p-2"
+              className="text-slate-500 border-0 border-b border-b-slate-500 focus:text-emerald-500 text-center w-14 p-2"
             />{' '}
             페이지
           </td>

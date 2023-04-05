@@ -28,6 +28,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
         [null, {\
           "packageLocation": "./",\
           "packageDependencies": [\
+            ["@tailwindcss/forms", "virtual:b6a0b76f6c54e578a176a02b79a38623598f6d531b6ccaeb4a35982aa1d18dcae599df73928b4676fb69f2966abbd1b49b676de1d715e96babc0b7ceda74d3df#npm:0.5.3"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:b6a0b76f6c54e578a176a02b79a38623598f6d531b6ccaeb4a35982aa1d18dcae599df73928b4676fb69f2966abbd1b49b676de1d715e96babc0b7ceda74d3df#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:b6a0b76f6c54e578a176a02b79a38623598f6d531b6ccaeb4a35982aa1d18dcae599df73928b4676fb69f2966abbd1b49b676de1d715e96babc0b7ceda74d3df#npm:13.5.0"],\
@@ -5316,6 +5317,29 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "linkType": "HARD"\
         }]\
       ]],\
+      ["@tailwindcss/forms", [\
+        ["npm:0.5.3", {\
+          "packageLocation": "./.yarn/cache/@tailwindcss-forms-npm-0.5.3-4d75c0dfda-9eddb4dbd0.zip/node_modules/@tailwindcss/forms/",\
+          "packageDependencies": [\
+            ["@tailwindcss/forms", "npm:0.5.3"]\
+          ],\
+          "linkType": "SOFT"\
+        }],\
+        ["virtual:b6a0b76f6c54e578a176a02b79a38623598f6d531b6ccaeb4a35982aa1d18dcae599df73928b4676fb69f2966abbd1b49b676de1d715e96babc0b7ceda74d3df#npm:0.5.3", {\
+          "packageLocation": "./.yarn/__virtual__/@tailwindcss-forms-virtual-afa68f40f7/0/cache/@tailwindcss-forms-npm-0.5.3-4d75c0dfda-9eddb4dbd0.zip/node_modules/@tailwindcss/forms/",\
+          "packageDependencies": [\
+            ["@tailwindcss/forms", "virtual:b6a0b76f6c54e578a176a02b79a38623598f6d531b6ccaeb4a35982aa1d18dcae599df73928b4676fb69f2966abbd1b49b676de1d715e96babc0b7ceda74d3df#npm:0.5.3"],\
+            ["@types/tailwindcss", null],\
+            ["mini-svg-data-uri", "npm:1.4.4"],\
+            ["tailwindcss", "virtual:b6a0b76f6c54e578a176a02b79a38623598f6d531b6ccaeb4a35982aa1d18dcae599df73928b4676fb69f2966abbd1b49b676de1d715e96babc0b7ceda74d3df#npm:3.3.0"]\
+          ],\
+          "packagePeers": [\
+            "@types/tailwindcss",\
+            "tailwindcss"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
       ["@testing-library/dom", [\
         ["npm:8.20.0", {\
           "packageLocation": "./.yarn/cache/@testing-library-dom-npm-8.20.0-afe79da119-1e599129a2.zip/node_modules/@testing-library/dom/",\
@@ -7465,6 +7489,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./",\
           "packageDependencies": [\
             ["calculator", "workspace:."],\
+            ["@tailwindcss/forms", "virtual:b6a0b76f6c54e578a176a02b79a38623598f6d531b6ccaeb4a35982aa1d18dcae599df73928b4676fb69f2966abbd1b49b676de1d715e96babc0b7ceda74d3df#npm:0.5.3"],\
             ["@testing-library/jest-dom", "npm:5.16.5"],\
             ["@testing-library/react", "virtual:b6a0b76f6c54e578a176a02b79a38623598f6d531b6ccaeb4a35982aa1d18dcae599df73928b4676fb69f2966abbd1b49b676de1d715e96babc0b7ceda74d3df#npm:13.4.0"],\
             ["@testing-library/user-event", "virtual:b6a0b76f6c54e578a176a02b79a38623598f6d531b6ccaeb4a35982aa1d18dcae599df73928b4676fb69f2966abbd1b49b676de1d715e96babc0b7ceda74d3df#npm:13.5.0"],\
@@ -13020,6 +13045,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packagePeers": [\
             "@types/webpack",\
             "webpack"\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["mini-svg-data-uri", [\
+        ["npm:1.4.4", {\
+          "packageLocation": "./.yarn/cache/mini-svg-data-uri-npm-1.4.4-929f6f1119-997f1fbd8d.zip/node_modules/mini-svg-data-uri/",\
+          "packageDependencies": [\
+            ["mini-svg-data-uri", "npm:1.4.4"]\
           ],\
           "linkType": "HARD"\
         }]\

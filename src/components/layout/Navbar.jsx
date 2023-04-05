@@ -2,9 +2,9 @@ import { Link, NavLink } from 'react-router-dom';
 
 function Navbar() {
   return (
-    <header className="px-4 xl:px-0 py-6 border-b border-b-slate-300 w-full xl:w-screen">
+    <header className="px-4 xl:px-0 py-6 border-b border-b-slate-300 w-full">
       <div className="container mx-auto flex flex-row justify-between items-center">
-        <Link to="/" className="nanumsr text-2xl font-black">
+        <Link to="/" className="nanumsr text-xl lg:text-2xl font-black">
           풍요책 계산기
         </Link>
         <nav
