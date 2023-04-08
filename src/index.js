@@ -7,8 +7,8 @@ import 'styles/index.css';
 import App from 'views/App';
 import NotFound from 'views/NotFound';
 import Home from 'views/home';
-import Spine from 'views/spine';
-import Estimate from 'views/estimate';
+import Spine from 'views/spine/Index';
+import Estimate from 'views/estimate/Index';
 
 // import { initializeApp } from 'firebase/app';
 // import { getAnalytics } from 'firebase/analytics';

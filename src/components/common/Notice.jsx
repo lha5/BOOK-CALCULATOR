@@ -1,12 +1,12 @@
-function Notice() {
+function Notice({ contents = [] }) {
   return (
     <div className="mt-5">
       <h3 className="font-bold text-slate-500 mb-2">유의 사항</h3>
       <div className="text-slate-700">
         <ul className="list-inside list-disc">
-          <li>어쩌고 저쩌고 어쩌고 저쩌고</li>
-          <li>어쩌고 저쩌고 어쩌고 저쩌고</li>
-          <li>어쩌고 저쩌고 어쩌고 저쩌고</li>
+          {contents.map((item, idx) => (
+            <li key={'notice' + idx + 1}>{item}</li>
+          ))}
         </ul>
       </div>
     </div>

@@ -17,7 +17,7 @@ function InputElement({ label = '', inputType = 'number', options = [], min = 4,
       defaultValue={options[0].value}
     >
       {options.map((item) => (
-        <option key={item.id} value={item.value} disabled={item.value === 'monoColor'}>
+        <option key={item.id} value={item.value} disabled={item.id === 'monoAndColor'}>
           {item.name}
         </option>
       ))}

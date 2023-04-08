@@ -1,10 +1,22 @@
+import { useState } from 'react';
+
 import Notice from 'components/common/Notice';
 import PageTitle from 'components/common/PageTitle';
 import ABField from 'components/estimate/ABField';
 import CField from 'components/estimate/CField';
 import InputElement from 'components/estimate/InputElement';
 
-function index() {
+const noticeData = [
+  '어쩌고 저쩌고',
+  '어쩌고 저쩌고',
+  '어쩌고 저쩌고',
+  '어쩌고 저쩌고',
+  '어쩌고 저쩌고',
+];
+
+function Index() {
+  const [data, setData] = useState({});
+
   return (
     <div className="flex flex-col md:w-full lg:w-2/3 mx-auto pb-8">
       <PageTitle title="견적 계산기" />
@@ -40,13 +52,15 @@ function index() {
           ]}
         />
         <ABField />
-        {/* <CField /> */}
+        <CField />
       </div>
       <hr className="mb-5 border-t-0 border-b border-slate-300 w-full h-px" />
-      <div className="flex items-center justify-end text-lg">한 권당 가격 : 00,000원</div>
-      <Notice />
+      <div className="flex items-center justify-end text-lg">
+        한 권당 가격 : 00,000원
+      </div>
+      <Notice contents={noticeData} />
     </div>
   );
 }
 
-export default index;
+export default Index;
