@@ -46,7 +46,6 @@ function InputElement({
         >
           <input
             type="radio"
-            // defaultChecked={options[0].name === item.name}
             name={radioName}
             value={item.value}
             className="mr-2"
