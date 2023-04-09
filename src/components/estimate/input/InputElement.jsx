@@ -1,13 +1,21 @@
-function InputElement({ label = '', inputType = 'number', options = [], min = 4, radioName = '' }) {
-  const InputText = () => (
-    <input type="text" className="mt-1 block w-full rounded-md border-gray-300 text-slate-700" />
-  );
-
+function InputElement({
+  field = '',
+  label = '',
+  inputType = 'number',
+  options = [],
+  min = 4,
+  radioName = '',
+  handleChange,
+  handleChecked,
+  defaultValue,
+}) {
   const InputNumber = () => (
     <input
       type="number"
       className="mt-1 block w-full rounded-md border-gray-300 text-slate-700"
       min={min}
+      defaultValue={defaultValue ? parseInt(defaultValue) : 0}
+      onChange={(e) => handleChange(e, field)}
     />
   );
 
@@ -15,9 +23,14 @@ function InputElement({ label = '', inputType = 'number', options = [], min = 4,
     <select
       className="mt-1 block w-full rounded-md border-gray-300 text-slate-700"
       defaultValue={options[0].value}
+      onChange={(e) => handleChange(e, field)}
     >
       {options.map((item) => (
-        <option key={item.id} value={item.value} disabled={item.id === 'monoAndColor'}>
+        <option
+          key={item.id}
+          value={item.value}
+          disabled={item.value === 'monoAndColor'}
+        >
           {item.name}
         </option>
       ))}
@@ -27,13 +40,17 @@ function InputElement({ label = '', inputType = 'number', options = [], min = 4,
   const InputRadio = () => (
     <div className="flex flex-col text-slate-700">
       {options.map((item) => (
-        <label key={item.id} className="flex flex-row items-center justify-start mb-0.5">
+        <label
+          key={item.id}
+          className="flex flex-row items-center justify-start mb-0.5"
+        >
           <input
             type="radio"
-            defaultChecked={options[0].name === item.name}
+            // defaultChecked={options[0].name === item.name}
             name={radioName}
             value={item.value}
             className="mr-2"
+            onClick={(e) => handleChecked(e, field)}
           />
           {item.name}
         </label>
@@ -41,28 +58,14 @@ function InputElement({ label = '', inputType = 'number', options = [], min = 4,
     </div>
   );
 
-  const InputCheckbox = () => (
-    <div className="flex flex-col text-slate-700">
-      {options.map((item) => (
-        <label key={item.id} className="flex flex-row items-center justify-start mt-0.5">
-          <input type="checkbox" value={item.value} className="mr-2" /> {item.name}
-        </label>
-      ))}
-    </div>
-  );
-
   const renderInputElement = () => {
     switch (inputType) {
-      case 'text':
-        return InputText();
       case 'number':
         return InputNumber();
       case 'select':
         return InputSelect();
       case 'radio':
         return InputRadio();
-      case 'checkbox':
-        return InputCheckbox();
       default:
         break;
     }

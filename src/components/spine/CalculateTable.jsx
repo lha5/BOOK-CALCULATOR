@@ -25,13 +25,13 @@ function CalculateTable({ data, result, handleSetData }) {
           </td>
           <td className="border border-slate-300 py-6">
             <input
-              type="text"
+              type="number"
               defaultValue={data['100g']}
               onBlur={(e) => handleSetData(e, '100g')}
               className="input-100g text-slate-500 border-0 border-b border-b-slate-500 focus:text-emerald-500 text-center w-14 p-2"
               autoFocus
             />{' '}
-            페이지
+            <span className="text-sm md:text-base">페이지</span>
           </td>
           <td className="border border-slate-300 py-6 font-semibold">
             {result['100g']}mm
@@ -47,12 +47,12 @@ function CalculateTable({ data, result, handleSetData }) {
           </td>
           <td className="border border-slate-300 py-6">
             <input
-              type="text"
+              type="number"
               defaultValue={data['80g']}
               onBlur={(e) => handleSetData(e, '80g')}
               className="input-80g text-slate-500 border-0 border-b border-b-slate-500 focus:text-emerald-500 text-center w-14 p-2"
             />{' '}
-            페이지
+            <span className="text-sm md:text-base">페이지</span>
           </td>
           <td className="border border-slate-300 py-6 font-semibold">
             {result['80g']}mm

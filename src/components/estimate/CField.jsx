@@ -1,31 +1,32 @@
-import InputElement from 'components/estimate/InputElement';
+import InputElement from 'components/estimate/input/InputElement';
+import CheckboxGroup from './input/CheckboxGroup';
+import Checkbox from './input/Checkbox';
 
-function CField() {
+function CField({ handleChange, options, setOptions }) {
   return (
     <>
-      <InputElement label="본문 페이지 수(최대 48P)" inputType="number" />
-      <InputElement label="제본 수량" inputType="number" min={10} />
       <InputElement
-        label="추가 옵션"
-        inputType="checkbox"
-        options={[
-          {
-            id: 'coverPaper',
-            value: 500,
-            name: '스타라이트 다이아몬드 200g (코팅 X)',
-          },
-          {
-            id: 'colorPaper',
-            value: 100,
-            name: '색면지',
-          },
-          {
-            id: 'coating',
-            value: 200,
-            name: '코팅',
-          },
-        ]}
+        label="본문 페이지 수(4의 배수, 최대 48P)"
+        inputType="number"
+        handleChange={handleChange}
+        field="pages"
       />
+      {/* <InputElement
+        label="제본 수량"
+        inputType="number"
+        min={10}
+        handleChange={handleChange}
+        field="quantity"
+      /> */}
+      <CheckboxGroup label="추가 옵션" values={options} onChange={setOptions}>
+        <Checkbox value="starlight">
+          스타라이트 다이아몬드 200g (코팅 불가)
+        </Checkbox>
+        <Checkbox value="colorPaper">색면지</Checkbox>
+        <Checkbox value="coating" disabled={options.includes('starlight')}>
+          코팅
+        </Checkbox>
+      </CheckboxGroup>
     </>
   );
 }
