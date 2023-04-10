@@ -1,6 +1,6 @@
 # 풍요책 계산기
 
-책 제본소 풍요로운 책세상(https://cafe.naver.com/bookcns)에서 사용하는 각종 계산기를 한글 프로그램 없이 간단하게 사용할 수 있는 웹 페이지 입니다.
+책 제본소 <a href="https://cafe.naver.com/bookcns" rel="noreferrer" target="_blank">풍요로운 책세상</a>에서 사용하는 각종 계산기를 한글 프로그램 없이 간단하게 사용할 수 있는 웹 페이지 입니다.
 
 ---
 
