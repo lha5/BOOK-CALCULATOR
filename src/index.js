@@ -6,7 +6,7 @@ import 'styles/index.css';
 
 import App from 'views/App';
 import NotFound from 'views/NotFound';
-import Home from 'views/home';
+import Home from 'views/home/Index';
 import Spine from 'views/spine/Index';
 import Estimate from 'views/estimate/Index';
 
